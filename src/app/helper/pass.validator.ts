@@ -5,9 +5,9 @@ export function mustMatch(password : string , cmpPassword : string){
         const Npassword = formGroup.controls[password]
         const NcmpPassword = formGroup.controls[cmpPassword]
 
-        if(NcmpPassword.errors && !NcmpPassword.errors['mustMatch']){
-            return ;
-        }
+        // if(NcmpPassword.errors && !NcmpPassword.errors['mustMatch']){
+        //     return ;
+        // }
         
 
         if(Npassword.value !== NcmpPassword.value){
